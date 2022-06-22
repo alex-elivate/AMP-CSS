@@ -11,6 +11,7 @@ License: GPL2
 
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 //check for updates
 if( ! class_exists( 'Amp_options_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
