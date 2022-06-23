@@ -3,7 +3,7 @@
 Plugin Name: AMP Additional Settings Extension
 Plugin URI: https://elivate.net
 Description: Extension made for AMP for WP to add a custom settings.
-Version: 1.0
+Version: 1.0.0
 Author:  Elivate staff
 Author URI: http://elivate.net/ 
 License: GPL2
@@ -26,7 +26,7 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 //check for updates
-if( ! class_exists( 'Amp_options_Updater' ) ){
+if( ! class_exists( 'Amp_Options_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
 

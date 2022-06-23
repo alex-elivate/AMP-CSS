@@ -3,7 +3,7 @@
 Thanks https://www.smashingmagazine.com/2015/08/deploy-wordpress-plugins-with-github-using-transients/
 This is a great tutorial.
 */
-class Amp_options_Updater {
+class Amp_Options_Updater {
 
 	private $file;
 
