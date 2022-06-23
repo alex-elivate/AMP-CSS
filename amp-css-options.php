@@ -30,7 +30,7 @@ if( ! class_exists( 'Amp_Options_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
 }
 
-$updater = new Amp_options_Updater( __FILE__ );
+$updater = new Amp_Options_Updater( __FILE__ );
 $updater->set_username( 'alex-elivate' );
 $updater->set_repository( 'amp-css' );
 $updater->initialize();
