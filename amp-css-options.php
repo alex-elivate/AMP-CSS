@@ -19,7 +19,7 @@ if( ! class_exists( 'Amp_options_Updater' ) ){
 
 $updater = new Amp_options_Updater( __FILE__ );
 $updater->set_username( 'alex-elivate' );
-$updater->set_repository( 'AMP-CSS' );
+$updater->set_repository( 'amp-css' );
 $updater->initialize();
 
 //requires AFC Pro and options field group.
