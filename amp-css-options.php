@@ -12,6 +12,19 @@ License: GPL2
 // Exit if accessed directly.
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Additional CSS',
+		'menu_title'	=> 'Additional CSS',
+		'menu_slug' 	=> 'amp-css-settings',
+		'capability'	=> 'edit_posts',
+		'parent_slug'	=> 'amp_options',
+		'redirect'		=> false
+	));
+
+}
 //check for updates
 if( ! class_exists( 'Amp_options_Updater' ) ){
 	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
@@ -22,17 +35,3 @@ $updater->set_username( 'alex-elivate' );
 $updater->set_repository( 'amp-css' );
 $updater->initialize();
 
-//requires AFC Pro and options field group.
-
-if( function_exists('acf_add_options_page') ) {
-	
-	acf_add_options_page(array(
-		'page_title' 	=> 'Additional CSS',    //Page title
-		'menu_title'	=> 'Additional CSS',    //Menu item
-		'menu_slug' 	=> 'amp-css-settings',  //slug for this menu
-		'capability'	=> 'edit_posts',        //only users that can edit posts.
-		'parent_slug'	=> 'amp_options',       //amp_options is the slug for the AMP for WP plugin.
-		'redirect'		=> false                //Only for autoselecting a menu when the root item is clicked.
-	));
-	
-}
