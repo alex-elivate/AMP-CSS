@@ -3,7 +3,7 @@
 Plugin Name: AMP Additional Settings Extension
 Plugin URI: https://elivate.net
 Description: Extension made for AMP for WP to add a custom settings.
-Version: 1.0.0
+Version: 1.0.2
 Author:  Elivate staff
 Author URI: http://elivate.net/ 
 License: GPL2
